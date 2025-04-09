@@ -1,0 +1,20 @@
+name: 'Public Schema'
+scope:
+  - 'sites.*:read'
+  - 'sites.f1b75f00-f4ed-4958-8a70-45714133b929:read' # EN
+  - 'sites.4e251c92-6bae-4905-b0f1-14fcf7169733:read' # DE
+  - 'sites.3b255b6a-c7cb-4664-9be2-96a291406be0:read' # ES
+  - 'sections.*:read'
+  - 'sections.dea885ab-8dbd-494d-bdf2-d367a1f3155c:read' # Blog
+  - 'sections.2648261a-f6fe-479b-918f-f06be8c9f669:read' # Example Section
+  - 'sections.a9d8e571-0b24-414f-9dd0-6f889eb10c98:read' # Field Check
+  - 'sections.79daebd0-0359-480d-9353-db1d3390552d:read' # Home
+  - 'sections.76084ba7-05a2-4e8b-af34-96b713efca1e:read' # News
+  - 'usergroups.*:read'
+  - 'usergroups.admin:read'
+  - 'usergroups.9657a792-3a18-4480-9f37-d9cded00ae7a:read' # Editor
+  - 'volumes.*:read'
+  - 'volumes.e38a46b6-d1cd-4891-832a-f74ee486ec01:read' # Images
+  - 'volumes.eeb49f6e-2650-422a-b765-6f44eb6d1f38:read' # Graphics
+  - 'addresses.*:read'
+  - 'navigation:read'

@@ -1,0 +1,44 @@
+description: null
+handle: editor
+name: Editor
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accessplugin-navigation
+  - accessplugin-query-api
+  - accessplugin-seomatic
+  - accesssitewhensystemisoff
+  - administrateusers
+  - assignuserpermissions
+  - 'createentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'createentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'deleteentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'deleteentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'deletepeerentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'deletepeerentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'deletepeerentrydrafts:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'deletepeerentrydrafts:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - deleteusers
+  - 'editsite:3b255b6a-c7cb-4664-9be2-96a291406be0' # ES
+  - 'editsite:4e251c92-6bae-4905-b0f1-14fcf7169733' # DE
+  - 'editsite:f1b75f00-f4ed-4958-8a70-45714133b929' # EN
+  - editusers
+  - impersonateusers
+  - moderateusers
+  - performupdates
+  - 'query-api-schemas:edit'
+  - 'query-api-tokens:edit'
+  - registerusers
+  - 'saveentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'saveentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'savepeerentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'savepeerentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'savepeerentrydrafts:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'savepeerentrydrafts:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'viewentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'viewentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'viewpeerentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'viewpeerentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'viewpeerentrydrafts:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
+  - 'viewpeerentrydrafts:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - viewusers

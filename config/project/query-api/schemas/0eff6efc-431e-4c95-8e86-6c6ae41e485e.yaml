@@ -1,0 +1,6 @@
+name: 'Semi Private Schema'
+scope:
+  - 'sites.f1b75f00-f4ed-4958-8a70-45714133b929:read' # EN
+  - 'sections.dea885ab-8dbd-494d-bdf2-d367a1f3155c:read' # Blog
+  - 'usergroups.admin:read'
+  - 'volumes.e38a46b6-d1cd-4891-832a-f74ee486ec01:read' # Images

@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: checkboxes
+instructions: null
+name: Checkboxes
+searchable: false
+settings:
+  customOptions: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'First Option'
+        -
+          - value
+          - firstOption
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Second Option'
+        -
+          - value
+          - secondOption
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

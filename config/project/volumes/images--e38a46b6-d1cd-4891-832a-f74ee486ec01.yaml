@@ -1,0 +1,82 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  24a027e9-729f-4301-8cf5-09ae9c505e06:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-30T20:50:20+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 1d304fe6-ed3e-4081-88cf-88620409ff08
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-15T16:08:09+00:00'
+            elementCondition: null
+            fieldUid: 51c10ef6-69a6-41b6-9a9f-53ff9cc34452 # Alt Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57d9c7ef-bcba-436a-9f3c-b3468908fcf9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-20T13:04:04+00:00'
+            elementCondition: null
+            fieldUid: c6f999d6-4930-49f6-9bca-9426a6058f93 # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 245981cc-ba44-41d1-a08d-45a08f18b826
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2aa2189d-a9a6-450e-bb2d-31ace99b4910
+        userCondition: null
+fs: images
+handle: images
+name: Images
+sortOrder: 1
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

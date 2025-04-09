@@ -1,0 +1,27 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sites.f1b75f00-f4ed-4958-8a70-45714133b929:read' # EN
+  - 'sites.4e251c92-6bae-4905-b0f1-14fcf7169733:read' # DE
+  - 'sites.3b255b6a-c7cb-4664-9be2-96a291406be0:read' # ES
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.79daebd0-0359-480d-9353-db1d3390552d:read' # Home
+  - 'sections.dea885ab-8dbd-494d-bdf2-d367a1f3155c:read' # Blog
+  - 'sections.a9d8e571-0b24-414f-9dd0-6f889eb10c98:read' # Field Check
+  - 'sections.76084ba7-05a2-4e8b-af34-96b713efca1e:read' # News
+  - 'nestedentryfields.c0ffe0d6-ee6f-45d7-9d5b-cc469270ff26:read' # Richtext
+  - 'nestedentryfields.1fb00b26-caa3-453a-a88f-cf3af93d99ab:read' # Content Builder
+  - 'nestedentryfields.ffaf40d1-d46f-48eb-b181-b73770a9e058:read' # Cta
+  - 'nestedentryfields.faf64569-2b86-4979-aefe-c5280424ac4c:read' # Matrix
+  - 'nestedentryfields.9e43a42c-c6b3-4ef6-bb30-e1e9498604cd:read' # Matrix Max Relations
+  - 'nestedentryfields.fa87bf5d-fba6-4b27-b497-eededff9af1c:read' # Single Matrix 
+  - 'volumes.e38a46b6-d1cd-4891-832a-f74ee486ec01:read' # Images
+  - 'usergroups.everyone:read'
+  - 'usergroups.9657a792-3a18-4480-9f37-d9cded00ae7a:read' # Editor
+  - 'categorygroups.d75e17fc-6378-4a30-9b59-14da2cd66fa0:read' # News Filter
+  - 'taggroups.c5bed593-74ed-420d-b526-ac96195a0e55:read' # News Tag
+  - 'navigationNavs.all:read'
+  - 'navigationNavs.4822ddea-f0d2-424b-b79d-1147fb230726:read' # Main Navigation
+  - 'seomatic.all:read'

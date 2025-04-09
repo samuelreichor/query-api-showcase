@@ -1,0 +1,435 @@
+color: null
+fieldLayouts:
+  24e73ce0-b784-4978-8e32-2140447bf94c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-24T20:13:22+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a7c0835c-3856-47af-a988-5346e6f64e7f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: cdf26765-b403-4449-8086-e526d5c50b2a # Address
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee05bcd4-d3dc-4294-b17f-283c9b6666b3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 83bea185-c5b5-4e9d-bf5c-ae8eb69ba126 # Asset
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 653e780b-3c8f-4b9d-a8e4-05753dbaa5b0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 0befc9a0-434e-4575-bccf-3fb3ee7db230 # Categories
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd665909-eb93-4d6e-9742-bdd748fb2845
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: e3db216a-40b5-4ccd-8eda-ac45d1cdf778 # Checkboxes
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9c25a70-a74e-4454-b08a-c81bf7be3f9f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 708b9fdc-c2eb-4bb4-8f5d-d31a57be9ecf # Color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d874a3ad-7698-4de8-b8d8-c6d82d723b73
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 6c0fe5b4-dc84-4c20-9fcc-0444fc9070de # Country
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b102a15-d44f-40fb-838f-cc46cb96f9be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 639c4992-dca5-49f8-8687-19ef3bdc1f07 # Date
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68d55396-93ca-4359-91cb-964cf11d3a6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: af7f5eb7-9f98-47cd-9181-004465494e28 # Dropdown
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86cad335-e682-4253-b252-bc4e0b4921d5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 877646e2-d3be-4997-b89d-225b5013e100 # Email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cefe98d7-7d4e-4615-99d1-4af5067a76d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 90d72bd5-ed0a-4fc4-b5f5-3ed67dac3372 # Entries
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3bada9f3-8d95-42b7-b8c3-995601b8d91e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 65f7a12c-0417-422b-ba0d-6848667b1071 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6962fc6-dc6f-42c7-90d6-cc4661de2f7a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: b0366fb1-c3b6-4b44-8c84-a4a282228dac # Lightswitch
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5182fe1-ce89-49d3-bef9-78ebb4154e69
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: c6f999d6-4930-49f6-9bca-9426a6058f93 # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73170c8a-eed2-4558-9dc1-8caf1a1add21
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: faf64569-2b86-4979-aefe-c5280424ac4c # Matrix
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f5846b8-1c1e-47b2-b2ed-7edc5181c92d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: f60e13fd-ed05-42c5-9387-c36ed7091dc1 # Money
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 921df97c-434c-46d5-9350-b9becd6e901d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 55cc6d4a-3d23-4f02-91d5-7bb20fe62d4e # Multi Select
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19a1ce3d-3756-460a-8c15-d9f45312f9c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 79eeb717-72b6-4759-a9fa-956ad9ba5709 # Number
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84f42247-068b-47db-9e60-7fcc90e3c0f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: e8b13026-7e14-481b-a8ca-dbd098c02b62 # Plain Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 526988a6-d30a-4e46-89b1-ed9ff1700c67
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 54ee2ebe-6d00-40bb-8de3-6f67a43302e4 # Radio Buttons
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b04b898a-1b5c-4e79-ba3d-cc252016fbd2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 2dd347a5-6a50-486b-ab5a-541e0a4ec8f1 # Range
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e131645d-47d9-4857-a481-033248fca10c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 234d61e5-308d-4a07-ab53-eb6e75b4bc44 # Table
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68268c1b-5a1a-44cc-a82e-0425adc570c2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: b1610d37-7ff0-4d09-b548-9d0893461468 # Tags
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4b5683c-bc46-4b20-ac56-b7eac20d1a3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 7623d15b-deb4-46e2-a4ac-e5e3e379e6f1 # Time
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20ce6ace-705c-4caf-8801-bfdc9ff22b6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T20:25:57+00:00'
+            elementCondition: null
+            fieldUid: 5d6ad491-6a41-4546-8ca9-85f25931bd20 # Users
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 525803a9-57b0-410c-a886-629a776c4b42
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 875adfd6-1c49-4a00-b991-0fccb4fdf2c6
+        userCondition: null
+handle: defaultFields
+hasTitleField: true
+icon: null
+name: 'Default Fields'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

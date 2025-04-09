@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: radioButtons
+instructions: null
+name: 'Radio Buttons'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Option A'
+        -
+          - value
+          - optionA
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Option B'
+        -
+          - value
+          - optionB
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

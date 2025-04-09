@@ -1,0 +1,189 @@
+dateModified: 1744124684
+email:
+  fromEmail: samuelreichor@gmail.com
+  fromName: Default
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  graphics:
+    hasUrls: true
+    name: Graphics
+    settings:
+      path: '@webroot/assets'
+    type: craft\fs\Local
+    url: '@web/assets/graphics/'
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/assets/images'
+    type: craft\fs\Local
+    url: '@web/assets/images/'
+meta:
+  __names__:
+    0befc9a0-434e-4575-bccf-3fb3ee7db230: Categories # Categories
+    0eff6efc-431e-4c95-8e86-6c6ae41e485e: 'Semi Private Schema' # Semi Private Schema
+    1a1d9c16-bdf4-439f-bf01-7300eb8aba0a: 'Single Related Category' # Single Related Category
+    1cd93979-2972-43fc-8416-fe5ad476f216: 'SEO Settingss' # SEO Settingss
+    1fb00b26-caa3-453a-a88f-cf3af93d99ab: 'Content Builder' # Content Builder
+    2dd347a5-6a50-486b-ab5a-541e0a4ec8f1: Range # Range
+    2debff50-4cf6-4fad-b4d2-8c3b89af3f35: Cta # Cta
+    02e38053-bfdd-4d15-99ba-93aedff5be97: asdf # asdf
+    3b255b6a-c7cb-4664-9be2-96a291406be0: ES # ES
+    4e251c92-6bae-4905-b0f1-14fcf7169733: DE # DE
+    4e858719-4528-4955-a2ea-cdf60a110324: 'Single Related Entry' # Single Related Entry
+    5a776f58-ff2b-470c-8725-cf8371fe83c3: Headline # Headline
+    5c9ccd7b-5bc6-4d52-865f-242e9ab64957: 'Image Text' # Image Text
+    5d6ad491-6a41-4546-8ca9-85f25931bd20: Users # Users
+    6c0fe5b4-dc84-4c20-9fcc-0444fc9070de: Country # Country
+    7e655b93-2efb-47b9-b615-a5ed91e919f9: 'Link Text' # Link Text
+    8f9d3742-2ab9-48fb-86be-b4616a677bc3: 'hyper Link' # hyper Link
+    9e04c2d5-4e1d-4007-b077-eece0b9282ae: 'Public Schema' # Public Schema
+    9e43a42c-c6b3-4ef6-bb30-e1e9498604cd: 'Matrix Max Relations' # Matrix Max Relations
+    20ba53d5-5cd8-43b5-8924-fe396aa73c84: 'Small Schema' # Small Schema
+    041b7417-831f-419a-bd81-0607732805fa: 'News Teaser' # News Teaser
+    51c10ef6-69a6-41b6-9a9f-53ff9cc34452: 'Alt Text' # Alt Text
+    51d596c0-de1d-44c6-940f-9cb5ebffb46c: 'Single Related User' # Single Related User
+    54ee2ebe-6d00-40bb-8de3-6f67a43302e4: 'Radio Buttons' # Radio Buttons
+    55cc6d4a-3d23-4f02-91d5-7bb20fe62d4e: 'Multi Select' # Multi Select
+    59fb6faa-0376-4921-878d-ebd1574897f2: Default # Default
+    65f7a12c-0417-422b-ba0d-6848667b1071: Icon # Icon
+    72a38b3a-fd67-467e-920f-2cc12b24d7fb: Simple # Simple
+    79daebd0-0359-480d-9353-db1d3390552d: Home # Home
+    79eeb717-72b6-4759-a9fa-956ad9ba5709: Number # Number
+    83b3b6b5-bc6d-4347-9c24-308b77741ab1: Author # Author
+    83bea185-c5b5-4e9d-bf5c-ae8eb69ba126: Asset # Asset
+    90d72bd5-ed0a-4fc4-b5f5-3ed67dac3372: Entries # Entries
+    97eed79f-6960-47e8-86e7-375615a7070a: 'Relational Fields with Max Setting' # Relational Fields with Max Setting
+    115cc606-15e6-4ad3-9abf-e8df4713f18f: 'Private Schema' # Private Schema
+    234d61e5-308d-4a07-ab53-eb6e75b4bc44: Table # Table
+    639c4992-dca5-49f8-8687-19ef3bdc1f07: Date # Date
+    708b9fdc-c2eb-4bb4-8f5d-d31a57be9ecf: Color # Color
+    922c9738-46cf-41f0-942a-1586792ccad2: 'Hyper Field' # Hyper Field
+    4822ddea-f0d2-424b-b79d-1147fb230726: 'Main Navigation' # Main Navigation
+    7623d15b-deb4-46e2-a4ac-e5e3e379e6f1: Time # Time
+    9657a792-3a18-4480-9f37-d9cded00ae7a: Editor # Editor
+    73224fd0-62f0-4246-bc68-8512e2c9a5be: 'Open in New Tab' # Open in New Tab
+    76084ba7-05a2-4e8b-af34-96b713efca1e: News # News
+    87655dce-f27c-4a4e-a317-b045a7021d63: 'Headline Tag' # Headline Tag
+    0411514a-5a41-4ca8-8863-3d076e5aa670: Home # Home
+    877646e2-d3be-4997-b89d-225b5013e100: Email # Email
+    2648261a-f6fe-479b-918f-f06be8c9f669: 'Example Section' # Example Section
+    49638297-5169-4a05-8a97-3cbc65f4d29a: Default # Default
+    a9d8e571-0b24-414f-9dd0-6f889eb10c98: 'Field Check' # Field Check
+    af7f5eb7-9f98-47cd-9181-004465494e28: Dropdown # Dropdown
+    b0366fb1-c3b6-4b44-8c84-a4a282228dac: Lightswitch # Lightswitch
+    b1610d37-7ff0-4d09-b548-9d0893461468: Tags # Tags
+    b43175b9-cf25-4203-8e4a-bf27b07759a8: 'Single Related Address' # Single Related Address
+    bcbde2d8-bccd-4869-aa53-2c187016d6d1: 'Default Fields' # Default Fields
+    c0ffe0d6-ee6f-45d7-9d5b-cc469270ff26: Richtext # Richtext
+    c5bed593-74ed-420d-b526-ac96195a0e55: 'News Tag' # News Tag
+    c6f999d6-4930-49f6-9bca-9426a6058f93: Link # Link
+    cdf26765-b403-4449-8086-e526d5c50b2a: Address # Address
+    d75e17fc-6378-4a30-9b59-14da2cd66fa0: 'News Filter' # News Filter
+    d1651409-e526-4405-a748-330fc9852f22: 'Single Related Asset' # Single Related Asset
+    dda891de-1c3b-4002-8b43-3ee0c7d19fc5: 'Select Author' # Select Author
+    dea885ab-8dbd-494d-bdf2-d367a1f3155c: Blog # Blog
+    e3db216a-40b5-4ccd-8eda-ac45d1cdf778: Checkboxes # Checkboxes
+    e8b13026-7e14-481b-a8ca-dbd098c02b62: 'Plain Text' # Plain Text
+    e38a46b6-d1cd-4891-832a-f74ee486ec01: Images # Images
+    edb55a62-f7ff-4193-a422-7509b7abdacd: 'News Tag' # News Tag
+    eeb49f6e-2650-422a-b765-6f44eb6d1f38: Graphics # Graphics
+    f06526c5-45ef-4dcd-990e-715e1af34366: Link # Link
+    f1b75f00-f4ed-4958-8a70-45714133b929: EN # EN
+    f5f37312-bb9f-4c8e-9263-85733999fdd2: Square # Square
+    f31ee956-cc97-4cdd-8eb3-3a33f861ecc0: 'New Schema' # New Schema
+    f60e13fd-ed05-42c5-9387-c36ed7091dc1: Money # Money
+    fa87bf5d-fba6-4b27-b497-eededff9af1c: 'Single Matrix ' # Single Matrix 
+    faf64569-2b86-4979-aefe-c5280424ac4c: Matrix # Matrix
+    fe85f36f-032f-4a6c-9ddc-7e084934d41a: 'Public Schema' # Public Schema
+    ffaf40d1-d46f-48eb-b181-b73770a9e058: Cta # Cta
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cloner:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: TU5WHF6YE117HD4L1PAEU6PA
+    schemaVersion: 1.0.0
+  imager-x:
+    edition: pro
+    enabled: true
+    licenseKey: I414X0BWX2GT7GGF069ILWDA
+    schemaVersion: 4.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: DEJU07J1YJ2U60V3Q7ZNFS2L
+    schemaVersion: 2.1.0
+  query-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 3NW9FZ9R0GG0HMVXPE8F9OHZ
+    schemaVersion: 3.0.12
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '🚧⚙ '
+      devModeTitlePrefix: '🚧 '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableDebugToolbarPanel: true
+      enableJsonLdEndpoint: true
+      enableMetaContainerEndpoint: true
+      enableSeoFileLinkEndpoint: true
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+      xDefaultSite: 0
+system:
+  edition: pro
+  live: true
+  name: Default
+  schemaVersion: 5.6.0.2
+  timeZone: America/Los_Angeles

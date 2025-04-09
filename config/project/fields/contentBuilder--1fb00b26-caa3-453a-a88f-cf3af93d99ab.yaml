@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: contentBuilder
+instructions: null
+name: 'Content Builder'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 83b3b6b5-bc6d-4347-9c24-308b77741ab1 # Author
+    - 5a776f58-ff2b-470c-8725-cf8371fe83c3 # Headline
+    - 5c9ccd7b-5bc6-4d52-865f-242e9ab64957 # Image Text
+    - 041b7417-831f-419a-bd81-0607732805fa # News Teaser
+    - f06526c5-45ef-4dcd-990e-715e1af34366 # Link
+    - 8f9d3742-2ab9-48fb-86be-b4616a677bc3 # hyper Link
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

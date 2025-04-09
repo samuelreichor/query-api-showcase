@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: multiSelect
+instructions: null
+name: 'Multi Select'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Option A'
+        -
+          - value
+          - optionA
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Option B'
+        -
+          - value
+          - optionB
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect

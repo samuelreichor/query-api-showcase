@@ -1,0 +1,6 @@
+name: 'Private Schema'
+scope:
+  - 'sites.*:read'
+  - 'sites.f1b75f00-f4ed-4958-8a70-45714133b929:read' # EN
+  - 'sites.4e251c92-6bae-4905-b0f1-14fcf7169733:read' # DE
+  - 'sites.3b255b6a-c7cb-4664-9be2-96a291406be0:read' # ES
