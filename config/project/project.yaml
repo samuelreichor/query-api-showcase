@@ -1,4 +1,4 @@
-dateModified: 1744124684
+dateModified: 1744569203
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -8,7 +8,7 @@ fs:
     hasUrls: true
     name: Graphics
     settings:
-      path: '@webroot/assets'
+      path: '@webroot/assets/graphics'
     type: craft\fs\Local
     url: '@web/assets/graphics/'
   images:
