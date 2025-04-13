@@ -14,10 +14,7 @@ RUN apk add --no-cache git unzip bash vim
 WORKDIR /app
 
 # Copy the composer.json and composer.lock files to the working directory.
-COPY composer.json composer.lock ./
-
-# Copy all the plugins that are directly in the repo in the folder
-COPY plugins ./plugins
+COPY composer-coolify.json ./composer.json
 
 # Install PHP dependencies using Composer, with --no-interaction, --no-dev, and --optimize-autoloader flags.
 # --no-interaction: Prevents Composer from prompting for user input.
