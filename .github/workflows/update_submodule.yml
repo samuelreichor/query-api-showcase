@@ -28,7 +28,7 @@ jobs:
       - name: Commit changes
         run: |
           git add plugins/query-api
-          git commit -m "Update submodule to latest commit"
+          git commit -m "Update craft-query-api submodule to latest commit"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
