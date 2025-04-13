@@ -1,0 +1,37 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 0411514a-5a41-4ca8-8863-3d076e5aa670 # Home
+handle: home
+maxAuthors: 1
+name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  3b255b6a-c7cb-4664-9be2-96a291406be0: # ES
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+  4e251c92-6bae-4905-b0f1-14fcf7169733: # DE
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+  f1b75f00-f4ed-4958-8a70-45714133b929: # EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+type: single

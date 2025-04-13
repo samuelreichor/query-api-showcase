@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: singleMatrix
+instructions: null
+name: 'Single Matrix '
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 2debff50-4cf6-4fad-b4d2-8c3b89af3f35 # Cta
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

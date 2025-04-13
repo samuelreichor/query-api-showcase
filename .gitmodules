@@ -1,0 +1,3 @@
+[submodule "plugins/query-api"]
+	path = plugins/query-api
+	url = https://github.com/samuelreichor/craft-query-api.git

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: matrixMaxRelations
+instructions: null
+name: 'Matrix Max Relations'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 97eed79f-6960-47e8-86e7-375615a7070a # Relational Fields with Max Setting
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

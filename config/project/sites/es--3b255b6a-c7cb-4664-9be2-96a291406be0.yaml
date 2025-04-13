@@ -1,0 +1,9 @@
+baseUrl: $WEBSITE_URL/es
+enabled: '1'
+handle: es
+hasUrls: true
+language: es
+name: ES
+primary: false
+siteGroup: 49638297-5169-4a05-8a97-3cbc65f4d29a # Default
+sortOrder: 3
