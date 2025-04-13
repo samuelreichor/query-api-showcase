@@ -14,19 +14,9 @@ return [
             '@web' => getenv('PRIMARY_SITE_URL'),
             '@websiteUrl' => getenv('WEBSITE_URL'),
         ],
-        'allowedGraphqlOrigins' => [
-            'http://localhost:3000',
-        ],
         'headlessMode' => true,
         'allowAdminChanges' => false,
         'allowedFileExtensions' => ['jpg', 'png', 'jpeg', 'webp', 'gif', 'svg', 'mp4', 'pdf', 'zip', 'csv'],
-        'extraFileKinds' => [
-            'ics' => [
-                'label' => 'iCal / ICS',
-                'extensions' => ['ics'],
-            ],
-        ],
-        'extraAllowedFileExtensions' => ['ics'],
         'maxUploadFileSize' => '50MB',
         'allowUpdates' => false,
         'cacheDuration' => 14400,
@@ -35,31 +25,19 @@ return [
             'subLeft' => true,
             'subRight' => true,
         ],
-        'devMode' => true,
         'disallowRobots' => true,
         'errorTemplatePrefix' => '_pages/errors/',
         'generateTransformsBeforePageLoad' => true,
         'limitAutoSlugsToAscii' => true,
         'maxRevisions' => 5,
         'omitScriptNameInUrls' => true,
-        'runQueueAutomatically' => false,
-        'securityKey' => getenv('SECURITY_KEY'),
-        'pageTrigger' => '?page',
-        'pathParam' => null,
+        'runQueueAutomatically' => true,
+        'securityKey' => getenv('CRAFT_SECURITY_KEY'),
     ],
 
     'production'  => [
         'devMode' => false,
         'disallowRobots' => false,
-        'disabledPlugins' => [
-            'blitz-recommendations',
-            'cp-field-inspect',
-            'dumper',
-            'elements-panel',
-            'templatecomments',
-            'twig-profiler',
-            'field-manager',
-        ],
     ],
 
     'staging'  => [
