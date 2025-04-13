@@ -39,10 +39,6 @@
       "url": "plugins/query-api"
     },
     {
-      "type": "git",
-      "url": "https://github.com/samuelreichor/craft-query-api.git"
-    },
-    {
       "type": "composer",
       "url": "https://composer.craftcms.com",
       "canonical": false
