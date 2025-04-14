@@ -24,6 +24,9 @@ services:
     depends_on:
       db:
         condition: service_healthy # Ensures the 'web' service starts only after the 'db' service is healthy
+    volumes:
+      - assets_data:/app/web/assets
 
 volumes:
   db_data: # Defines the 'db_data' volume for persistent database storage (database is not deleted during deploy)
+  assets_data:
