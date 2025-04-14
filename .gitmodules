@@ -1,3 +1,4 @@
 [submodule "plugins/query-api"]
 	path = plugins/query-api
 	url = ../craft-query-api.git
+	branch = dev
