@@ -37,6 +37,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cdf26765-b403-4449-8086-e526d5c50b2a # Address
             handle: null
@@ -53,6 +54,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 83bea185-c5b5-4e9d-bf5c-ae8eb69ba126 # Asset
             handle: null
@@ -68,7 +70,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-04-17T15:26:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b7b6cc39-566a-4696-b1ad-25565aef61a8 # Button Group
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 245b33b9-a192-46f4-8796-ec2626378d8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 0befc9a0-434e-4575-bccf-3fb3ee7db230 # Categories
             handle: null
@@ -85,6 +105,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: e3db216a-40b5-4ccd-8eda-ac45d1cdf778 # Checkboxes
             handle: null
@@ -101,6 +122,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 708b9fdc-c2eb-4bb4-8f5d-d31a57be9ecf # Color
             handle: null
@@ -117,6 +139,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 6c0fe5b4-dc84-4c20-9fcc-0444fc9070de # Country
             handle: null
@@ -133,6 +156,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 639c4992-dca5-49f8-8687-19ef3bdc1f07 # Date
             handle: null
@@ -149,6 +173,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: af7f5eb7-9f98-47cd-9181-004465494e28 # Dropdown
             handle: null
@@ -165,6 +190,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 877646e2-d3be-4997-b89d-225b5013e100 # Email
             handle: null
@@ -181,6 +207,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 90d72bd5-ed0a-4fc4-b5f5-3ed67dac3372 # Entries
             handle: null
@@ -197,6 +224,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 65f7a12c-0417-422b-ba0d-6848667b1071 # Icon
             handle: null
@@ -212,7 +240,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-04-17T15:30:50+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d475f53e-db8d-495f-a239-5e05a0c9f09d # Json
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 78adac6f-0ee2-453f-a56d-b29c6a6ade1d
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: b0366fb1-c3b6-4b44-8c84-a4a282228dac # Lightswitch
             handle: null
@@ -229,6 +275,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: c6f999d6-4930-49f6-9bca-9426a6058f93 # Link
             handle: null
@@ -245,6 +292,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: faf64569-2b86-4979-aefe-c5280424ac4c # Matrix
             handle: null
@@ -261,6 +309,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: f60e13fd-ed05-42c5-9387-c36ed7091dc1 # Money
             handle: null
@@ -277,6 +326,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 55cc6d4a-3d23-4f02-91d5-7bb20fe62d4e # Multi Select
             handle: null
@@ -293,6 +343,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 79eeb717-72b6-4759-a9fa-956ad9ba5709 # Number
             handle: null
@@ -309,6 +360,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: e8b13026-7e14-481b-a8ca-dbd098c02b62 # Plain Text
             handle: null
@@ -325,6 +377,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 54ee2ebe-6d00-40bb-8de3-6f67a43302e4 # Radio Buttons
             handle: null
@@ -341,6 +394,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 2dd347a5-6a50-486b-ab5a-541e0a4ec8f1 # Range
             handle: null
@@ -357,6 +411,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 234d61e5-308d-4a07-ab53-eb6e75b4bc44 # Table
             handle: null
@@ -373,6 +428,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: b1610d37-7ff0-4d09-b548-9d0893461468 # Tags
             handle: null
@@ -389,6 +445,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 7623d15b-deb4-46e2-a4ac-e5e3e379e6f1 # Time
             handle: null
@@ -405,6 +462,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-24T20:25:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 5d6ad491-6a41-4546-8ca9-85f25931bd20 # Users
             handle: null

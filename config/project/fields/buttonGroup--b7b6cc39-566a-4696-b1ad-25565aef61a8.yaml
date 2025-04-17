@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: buttonGroup
+instructions: null
+name: 'Button Group'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Option A'
+        -
+          - value
+          - optionA
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Option B'
+        -
+          - value
+          - optionB
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

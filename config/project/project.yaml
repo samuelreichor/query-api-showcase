@@ -1,4 +1,4 @@
-dateModified: 1744569203
+dateModified: 1744903850
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -72,6 +72,7 @@ meta:
     a9d8e571-0b24-414f-9dd0-6f889eb10c98: 'Field Check' # Field Check
     af7f5eb7-9f98-47cd-9181-004465494e28: Dropdown # Dropdown
     b0366fb1-c3b6-4b44-8c84-a4a282228dac: Lightswitch # Lightswitch
+    b7b6cc39-566a-4696-b1ad-25565aef61a8: 'Button Group' # Button Group
     b1610d37-7ff0-4d09-b548-9d0893461468: Tags # Tags
     b43175b9-cf25-4203-8e4a-bf27b07759a8: 'Single Related Address' # Single Related Address
     bcbde2d8-bccd-4869-aa53-2c187016d6d1: 'Default Fields' # Default Fields
@@ -80,6 +81,7 @@ meta:
     c6f999d6-4930-49f6-9bca-9426a6058f93: Link # Link
     cdf26765-b403-4449-8086-e526d5c50b2a: Address # Address
     d75e17fc-6378-4a30-9b59-14da2cd66fa0: 'News Filter' # News Filter
+    d475f53e-db8d-495f-a239-5e05a0c9f09d: Json # Json
     d1651409-e526-4405-a748-330fc9852f22: 'Single Related Asset' # Single Related Asset
     dda891de-1c3b-4002-8b43-3ee0c7d19fc5: 'Select Author' # Select Author
     dea885ab-8dbd-494d-bdf2-d367a1f3155c: Blog # Blog
@@ -185,5 +187,5 @@ system:
   edition: pro
   live: true
   name: Default
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.7.0.3
   timeZone: America/Los_Angeles
