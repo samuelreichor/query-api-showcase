@@ -3,7 +3,7 @@
   "prefer-stable": true,
   "require": {
     "craftcms/ckeditor": "4.6.0",
-    "craftcms/cms": "5.7.1",
+    "craftcms/cms": "5.7.1.1",
     "mmikkel/cp-field-inspect": "^2.0.2",
     "nystudio107/craft-seomatic": "5.1.12",
     "samuelreichor/craft-query-api": "*",

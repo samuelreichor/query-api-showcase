@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "08bf256ccb0c15d62543b04ac140bfde",
+    "content-hash": "b06289fde6cedcc72201a5847ad66b79",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -519,11 +519,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.7.1",
+            "version": "5.7.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/fbf39e6df9f9eca7cbd261512946f238f681e6f0",
-                "reference": "fbf39e6df9f9eca7cbd261512946f238f681e6f0",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/819066c0d22909ab2a69b691e8bb7fa1aaddae03",
+                "reference": "819066c0d22909ab2a69b691e8bb7fa1aaddae03",
                 "shasum": ""
             },
             "require": {
@@ -620,7 +620,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2025-04-17T00:11:00+00:00"
+            "time": "2025-04-17T16:31:42+00:00"
         },
         {
             "name": "craftcms/html-field",
