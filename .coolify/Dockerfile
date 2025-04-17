@@ -9,12 +9,16 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Install system tools like git, unzip, bash, and vim using apk (Alpine Package Keeper).
 # --no-cache avoids caching package lists, reducing image size.
-RUN apk add --no-cache git unzip bash vim
+RUN apk add --no-cache git unzip bash vim jq mariadb-connector-c mysql-client
 
 WORKDIR /app
 
 # Copy the composer.json and composer.lock files to the working directory.
-COPY composer-coolify.json ./composer.json
+COPY composer.json ./
+
+# Change version of craft-query-api in composer json to fix an issue with paths in the image.
+RUN jq ".require[\"samuelreichor/craft-query-api\"] = \"dev-dev\" | .repositories = (.repositories // [] | map(select(.type != \"path\" or .url != \"plugins/query-api\")))" composer.json > composer.tmp.json && mv composer.tmp.json composer.json
+
 
 # Install PHP dependencies using Composer, with --no-interaction, --no-dev, and --optimize-autoloader flags.
 # --no-interaction: Prevents Composer from prompting for user input.
