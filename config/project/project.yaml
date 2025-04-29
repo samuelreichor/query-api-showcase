@@ -1,4 +1,4 @@
-dateModified: 1744903850
+dateModified: 1745930914
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -130,12 +130,13 @@ plugins:
   query-api:
     edition: standard
     enabled: true
+    licenseKey: J3FO9VCUF25H7MMJFO0GMQFV
     schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true
     licenseKey: 3NW9FZ9R0GG0HMVXPE8F9OHZ
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
