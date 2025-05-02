@@ -3,11 +3,15 @@
 namespace modules\queryapiextension;
 
 use Craft;
+use modules\queryapiextension\services\HyperTypeService;
 use modules\queryapiextension\transformers\HyperTransformer;
 use modules\queryapiextension\transformers\NavigationTransformer;
 use samuelreichoer\queryapi\events\RegisterElementTypesEvent;
+use samuelreichoer\queryapi\events\RegisterTypeDefinitionEvent;
 use samuelreichoer\queryapi\models\RegisterElementType;
+use samuelreichoer\queryapi\models\RegisterTypeDefinition;
 use samuelreichoer\queryapi\services\ElementQueryService;
+use samuelreichoer\queryapi\services\TypescriptService;
 use samuelreichoer\queryapi\transformers\BaseTransformer;
 use samuelreichoer\queryapi\events\RegisterFieldTransformersEvent;
 use yii\base\Event;
@@ -52,6 +56,20 @@ class QueryApiExtension extends BaseModule
                     'fieldClass' => 'verbb\hyper\fields\HyperField',
                     'transformer' => HyperTransformer::class,
                 ];
+            }
+        );
+
+        Event::on(
+            TypescriptService::class,
+            TypescriptService::EVENT_REGISTER_TYPE_DEFINITIONS,
+            function (RegisterTypeDefinitionEvent $event) {
+                $event->typeDefinitions[] = new RegisterTypeDefinition([
+                    'fieldTypeClass' => 'verbb\hyper\fields\HyperField',
+                    'staticHardType' => 'export type hello = string',
+                    'dynamicHardType' => HyperTypeService::class,
+                    'staticTypeDefinition' => 'hello[]',
+                    'dynamicDefinitionClass' => HyperTypeService::class,
+                ]);
             }
         );
 
