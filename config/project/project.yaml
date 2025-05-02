@@ -1,4 +1,4 @@
-dateModified: 1745930914
+dateModified: 1746185758
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -25,6 +25,7 @@ meta:
     1a1d9c16-bdf4-439f-bf01-7300eb8aba0a: 'Single Related Category' # Single Related Category
     1cd93979-2972-43fc-8416-fe5ad476f216: 'SEO Settingss' # SEO Settingss
     1fb00b26-caa3-453a-a88f-cf3af93d99ab: 'Content Builder' # Content Builder
+    2c8c1222-3bdb-4393-a6fd-66ed02b2da68: 'Blog Filters' # Blog Filters
     2dd347a5-6a50-486b-ab5a-541e0a4ec8f1: Range # Range
     2debff50-4cf6-4fad-b4d2-8c3b89af3f35: Cta # Cta
     02e38053-bfdd-4d15-99ba-93aedff5be97: asdf # asdf
@@ -67,7 +68,6 @@ meta:
     87655dce-f27c-4a4e-a317-b045a7021d63: 'Headline Tag' # Headline Tag
     0411514a-5a41-4ca8-8863-3d076e5aa670: Home # Home
     877646e2-d3be-4997-b89d-225b5013e100: Email # Email
-    2648261a-f6fe-479b-918f-f06be8c9f669: 'Example Section' # Example Section
     49638297-5169-4a05-8a97-3cbc65f4d29a: Default # Default
     a9d8e571-0b24-414f-9dd0-6f889eb10c98: 'Field Check' # Field Check
     af7f5eb7-9f98-47cd-9181-004465494e28: Dropdown # Dropdown

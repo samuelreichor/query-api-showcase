@@ -1,7 +1,6 @@
-altTranslationKeyFormat: null
-altTranslationMethod: language
+defaultPlacement: end
 fieldLayouts:
-  728cc3f0-4edc-4650-8f81-ddc6b8641388:
+  91420c89-f301-4986-9999-48d224d98245:
     tabs:
       -
         elementCondition: null
@@ -11,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-03-22T20:41:26+00:00'
+            dateAdded: '2025-04-30T19:55:15+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,46 +30,46 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\assets\AssetTitleField
-            uid: 5435a1d1-2b92-4368-9629-c530dd75957f
+            type: craft\fieldlayoutelements\TitleField
+            uid: b20c17b7-238d-4a01-9392-1d455a054b92
             userCondition: null
             warning: null
             width: 100
           -
-            attribute: alt
-            class: null
-            cols: null
-            dateAdded: '2025-05-01T10:49:03+00:00'
-            disabled: false
+            dateAdded: '2025-04-30T19:56:50+00:00'
+            editCondition: null
             elementCondition: null
-            id: null
+            fieldUid: e8b13026-7e14-481b-a8ca-dbd098c02b62 # Plain Text
+            handle: null
             includeInCards: false
             instructions: null
             label: null
-            name: null
-            orientation: null
-            placeholder: null
             providesThumbs: false
-            readonly: false
-            requirable: true
             required: false
-            rows: null
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\assets\AltField
-            uid: de1fd97e-872c-44d5-b112-5f84a0bbb85a
+            type: craft\fieldlayoutelements\CustomField
+            uid: ced23100-4fae-49e1-ac82-923dec5b0818
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 3546c931-a9cd-4afb-a4e7-99929f128b94
+        uid: 65449640-ebf3-49ad-bef3-6daccedcf631
         userCondition: null
-fs: graphics
-handle: graphics
-name: Graphics
-sortOrder: 2
-subpath: ''
-titleTranslationKeyFormat: null
-titleTranslationMethod: language
-transformFs: ''
-transformSubpath: ''
+handle: blogFilters
+name: 'Blog Filters'
+siteSettings:
+  3b255b6a-c7cb-4664-9be2-96a291406be0: # ES
+    hasUrls: true
+    template: null
+    uriFormat: 'blog-filters/{slug}'
+  4e251c92-6bae-4905-b0f1-14fcf7169733: # DE
+    hasUrls: true
+    template: null
+    uriFormat: 'blog-filters/{slug}'
+  f1b75f00-f4ed-4958-8a70-45714133b929: # EN
+    hasUrls: true
+    template: null
+    uriFormat: 'blog-filters/{slug}'
+structure:
+  maxLevels: null
+  uid: b1ed7682-7f95-4555-ac45-6c556553efa3
