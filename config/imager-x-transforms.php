@@ -8,7 +8,7 @@ return [
             ['width' => 1600],
         ],
     ],
-    'square' => [
+    '1:1' => [
         'transforms' => [
             ['width' => 200],
             ['width' => 400],
@@ -19,7 +19,7 @@ return [
             'ratio' => 1,
         ],
     ],
-    'landscape34' => [
+    '34' => [
         'transforms' => [
             ['width' => 200],
             ['width' => 400],
@@ -30,7 +30,7 @@ return [
             'ratio' => 3/4,
         ],
     ],
-    'landscape169' => [
+    '16 9' => [
         'transforms' => [
             ['width' => 200],
             ['width' => 400],
@@ -41,7 +41,7 @@ return [
             'ratio' => 16/9,
         ],
     ],
-    'portrait' => [
+    '2/3' => [
         'transforms' => [
             ['width' => 200],
             ['width' => 400],
