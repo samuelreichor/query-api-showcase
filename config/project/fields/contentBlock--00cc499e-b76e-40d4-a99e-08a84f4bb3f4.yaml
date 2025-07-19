@@ -1,0 +1,108 @@
+columnSuffix: null
+handle: contentBlock
+instructions: null
+name: 'Content Block'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 9f4d8ca8-a6ba-476b-bacf-ca47260972b9
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    1:
+                      - uid
+                      - 5dfb17cf-f4be-42bc-9401-52e17c52fffb
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-19T19:52:18+00:00'
+                            11:
+                              - uid
+                              - 878e07a2-2e8c-4604-a8dc-4928c9cc9bb7
+                            14:
+                              - fieldUid
+                              - c0ffe0d6-ee6f-45d7-9d5b-cc469270ff26 # Richtext
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-19T19:52:18+00:00'
+                            11:
+                              - uid
+                              - 27d0762e-7212-42fb-a706-8a9f53a4708e
+                            14:
+                              - fieldUid
+                              - fa87bf5d-fba6-4b27-b497-eededff9af1c # Single Matrix 
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-07-19T19:52:18+00:00'
+                            11:
+                              - uid
+                              - 968ae223-0f76-47c2-abb7-32d5ed7982db
+                            14:
+                              - fieldUid
+                              - faf64569-2b86-4979-aefe-c5280424ac4c # Matrix
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

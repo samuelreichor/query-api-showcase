@@ -6,17 +6,32 @@ searchable: false
 settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
-    - 5a776f58-ff2b-470c-8725-cf8371fe83c3 # Headline
-    - 5c9ccd7b-5bc6-4d52-865f-242e9ab64957 # Image Text
+    -
+      __assoc__:
+        -
+          - uid
+          - 5a776f58-ff2b-470c-8725-cf8371fe83c3 # Headline
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 5c9ccd7b-5bc6-4d52-865f-242e9ab64957 # Image Text
+        -
+          - group
+          - General
   includeTableView: false
   maxEntries: null
   minEntries: null
-  pageSize: 50
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
   showCardsInGrid: false
-  viewMode: cards
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

@@ -1,4 +1,4 @@
-dateModified: 1746185758
+dateModified: 1752954874
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -21,6 +21,7 @@ fs:
 meta:
   __names__:
     0befc9a0-434e-4575-bccf-3fb3ee7db230: Categories # Categories
+    00cc499e-b76e-40d4-a99e-08a84f4bb3f4: 'Content Block' # Content Block
     0eff6efc-431e-4c95-8e86-6c6ae41e485e: 'Semi Private Schema' # Semi Private Schema
     1a1d9c16-bdf4-439f-bf01-7300eb8aba0a: 'Single Related Category' # Single Related Category
     1cd93979-2972-43fc-8416-fe5ad476f216: 'SEO Settingss' # SEO Settingss
@@ -108,10 +109,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  cp-field-inspect:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   hyper:
     edition: standard
     enabled: true
@@ -149,7 +146,7 @@ plugins:
           __assoc__:
             -
               - policy
-              - '''self'''
+              - "'self'"
       devModeCpTitlePrefix: '🚧⚙ '
       devModeTitlePrefix: '🚧 '
       displayAnalysisSidebar: true
@@ -188,5 +185,5 @@ system:
   edition: pro
   live: true
   name: Default
-  schemaVersion: 5.7.0.3
+  schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles
