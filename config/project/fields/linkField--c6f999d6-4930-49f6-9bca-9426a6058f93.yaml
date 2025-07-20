@@ -36,6 +36,13 @@ settings:
               - showUnpermittedFiles
               - ''
       -
+        - category
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
         - entry
         -
           __assoc__:
