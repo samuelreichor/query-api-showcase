@@ -1,8 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - bcbde2d8-bccd-4869-aa53-2c187016d6d1 # Default Fields
-  - 97eed79f-6960-47e8-86e7-375615a7070a # Relational Fields with Max Setting
+  -
+    uid: bcbde2d8-bccd-4869-aa53-2c187016d6d1 # Default Fields
+  -
+    uid: 97eed79f-6960-47e8-86e7-375615a7070a # Relational Fields with Max Setting
 handle: fieldCheck
 maxAuthors: 1
 name: 'Field Check'

@@ -3,6 +3,12 @@ description: null
 fieldLayouts:
   24e73ce0-b784-4978-8e32-2140447bf94c:
     cardThumbAlignment: end
+    generatedFields:
+      -
+        handle: generatedField
+        name: 'Generated Field'
+        template: '{{ "Test" }}'
+        uid: 23a7e2f6-24eb-4350-9b0a-bb36d7365738
     tabs:
       -
         elementCondition: null
