@@ -1,4 +1,4 @@
-dateModified: 1753018859
+dateModified: 1759067779
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -29,6 +29,7 @@ meta:
     2c8c1222-3bdb-4393-a6fd-66ed02b2da68: 'Blog Filters' # Blog Filters
     2dd347a5-6a50-486b-ab5a-541e0a4ec8f1: Range # Range
     2debff50-4cf6-4fad-b4d2-8c3b89af3f35: Cta # Cta
+    2e6b55b2-5452-45a5-80ba-3aa1a0ba2a1d: Relations # Relations
     02e38053-bfdd-4d15-99ba-93aedff5be97: asdf # asdf
     3b255b6a-c7cb-4664-9be2-96a291406be0: ES # ES
     4e251c92-6bae-4905-b0f1-14fcf7169733: DE # DE
@@ -64,6 +65,7 @@ meta:
     4822ddea-f0d2-424b-b79d-1147fb230726: 'Main Navigation' # Main Navigation
     7623d15b-deb4-46e2-a4ac-e5e3e379e6f1: Time # Time
     9657a792-3a18-4480-9f37-d9cded00ae7a: Editor # Editor
+    33706dae-215e-4c66-99a8-b45a2cc5ec00: Relations # Relations
     73224fd0-62f0-4246-bc68-8512e2c9a5be: 'Open in New Tab' # Open in New Tab
     76084ba7-05a2-4e8b-af34-96b713efca1e: News # News
     87655dce-f27c-4a4e-a317-b045a7021d63: 'Headline Tag' # Headline Tag

@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 0411514a-5a41-4ca8-8863-3d076e5aa670 # Home
-handle: home
+    uid: 2e6b55b2-5452-45a5-80ba-3aa1a0ba2a1d # Relations
+handle: relations
 maxAuthors: 1
-name: Home
+name: Relations
 previewTargets:
   -
     __assoc__:
@@ -23,16 +23,16 @@ siteSettings:
   3b255b6a-c7cb-4664-9be2-96a291406be0: # ES
     enabledByDefault: true
     hasUrls: true
-    template: home.twig
-    uriFormat: __home__
+    template: null
+    uriFormat: 'relations/{slug}'
   4e251c92-6bae-4905-b0f1-14fcf7169733: # DE
     enabledByDefault: true
     hasUrls: true
-    template: home.twig
-    uriFormat: __home__
+    template: null
+    uriFormat: 'relations/{slug}'
   f1b75f00-f4ed-4958-8a70-45714133b929: # EN
     enabledByDefault: true
     hasUrls: true
-    template: home.twig
-    uriFormat: __home__
-type: single
+    template: null
+    uriFormat: 'relations/{slug}'
+type: channel
