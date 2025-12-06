@@ -1,4 +1,4 @@
-dateModified: 1759072584
+dateModified: 1765033023
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -91,6 +91,7 @@ meta:
     e3db216a-40b5-4ccd-8eda-ac45d1cdf778: Checkboxes # Checkboxes
     e8b13026-7e14-481b-a8ca-dbd098c02b62: 'Plain Text' # Plain Text
     e38a46b6-d1cd-4891-832a-f74ee486ec01: Images # Images
+    e73375a4-bac2-47af-a41b-31344107de53: Landscape # Landscape
     edb55a62-f7ff-4193-a422-7509b7abdacd: 'News Tag' # News Tag
     eeb49f6e-2650-422a-b765-6f44eb6d1f38: Graphics # Graphics
     f06526c5-45ef-4dcd-990e-715e1af34366: Link # Link
