@@ -2,14 +2,14 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "craftcms/ckeditor": "4.9.0",
-    "craftcms/cms": "5.8.17",
-    "nystudio107/craft-seomatic": "5.1.16",
+    "craftcms/ckeditor": "4.11.0",
+    "craftcms/cms": "5.8.21",
+    "nystudio107/craft-seomatic": "5.1.19",
     "samuelreichor/craft-query-api": "*",
-    "spacecatninja/imager-x": "5.1.5",
+    "spacecatninja/imager-x": "5.1.7",
     "verbb/cloner": "3.0.2",
-    "verbb/hyper": "2.2.7",
-    "verbb/navigation": "3.0.10",
+    "verbb/hyper": "2.2.10",
+    "verbb/navigation": "3.0.15",
     "vlucas/phpdotenv": "5.6.1"
   },
   "require-dev": {

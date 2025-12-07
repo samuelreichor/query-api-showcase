@@ -1,4 +1,4 @@
-dateModified: 1765113798
+dateModified: 1765113991
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -127,7 +127,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: DEJU07J1YJ2U60V3Q7ZNFS2L
-    schemaVersion: 2.1.0
+    schemaVersion: 2.1.1
   query-api:
     edition: standard
     enabled: true
