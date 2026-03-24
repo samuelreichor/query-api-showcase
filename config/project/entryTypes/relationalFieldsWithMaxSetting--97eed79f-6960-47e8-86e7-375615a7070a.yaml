@@ -14,7 +14,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +22,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -41,10 +39,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b43175b9-cf25-4203-8e4a-bf27b07759a8 # Single Related Address
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -58,10 +54,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d1651409-e526-4405-a748-330fc9852f22 # Single Related Asset
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -75,10 +69,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 1a1d9c16-bdf4-439f-bf01-7300eb8aba0a # Single Related Category
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -92,10 +84,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: fa87bf5d-fba6-4b27-b497-eededff9af1c # Single Matrix 
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -109,10 +99,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 4e858719-4528-4955-a2ea-cdf60a110324 # Single Related Entry
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -126,10 +114,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 51d596c0-de1d-44c6-940f-9cb5ebffb46c # Single Related User
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -143,10 +129,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 9e43a42c-c6b3-4ef6-bb30-e1e9498604cd # Matrix Max Relations
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

@@ -42,3 +42,5 @@ permissions:
   - 'viewpeerentrydrafts:76084ba7-05a2-4e8b-af34-96b713efca1e' # News
   - 'viewpeerentrydrafts:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
   - viewusers
+  - 'changeauthorforpeerentries:dea885ab-8dbd-494d-bdf2-d367a1f3155c' # Blog
+  - 'changeauthorforpeerentries:76084ba7-05a2-4e8b-af34-96b713efca1e' # News

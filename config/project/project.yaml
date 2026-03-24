@@ -1,4 +1,4 @@
-dateModified: 1765113991
+dateModified: 1774382172
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -48,9 +48,7 @@ meta:
     51d596c0-de1d-44c6-940f-9cb5ebffb46c: 'Single Related User' # Single Related User
     54ee2ebe-6d00-40bb-8de3-6f67a43302e4: 'Radio Buttons' # Radio Buttons
     55cc6d4a-3d23-4f02-91d5-7bb20fe62d4e: 'Multi Select' # Multi Select
-    59fb6faa-0376-4921-878d-ebd1574897f2: Default # Default
     65f7a12c-0417-422b-ba0d-6848667b1071: Icon # Icon
-    72a38b3a-fd67-467e-920f-2cc12b24d7fb: Simple # Simple
     79daebd0-0359-480d-9353-db1d3390552d: Home # Home
     79eeb717-72b6-4759-a9fa-956ad9ba5709: Number # Number
     83b3b6b5-bc6d-4347-9c24-308b77741ab1: Author # Author
@@ -108,7 +106,7 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.0.0.1
   cloner:
     edition: standard
     enabled: true
@@ -127,7 +125,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: DEJU07J1YJ2U60V3Q7ZNFS2L
-    schemaVersion: 2.1.1
+    schemaVersion: 2.1.2
   query-api:
     edition: standard
     enabled: true
@@ -189,5 +187,5 @@ system:
   edition: pro
   live: true
   name: Default
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.9.0.8
   timeZone: America/Los_Angeles

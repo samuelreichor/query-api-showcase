@@ -25,3 +25,5 @@ scope:
   - 'navigationNavs.all:read'
   - 'navigationNavs.4822ddea-f0d2-424b-b79d-1147fb230726:read' # Main Navigation
   - 'seomatic.all:read'
+  - 'directive:parseRefs'
+  - 'directive:transform'
