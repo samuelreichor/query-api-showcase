@@ -1,6 +1,6 @@
 services:
   db:
-    image: mysql:9.2.0 # Pinned to the version of the existing data volume, see MySQL upgrade paths before bumping
+    image: mysql:9.2 # Pinned to the version of the existing data volume, see MySQL upgrade paths before bumping
     environment:
       MYSQL_DATABASE: db # Database name
       MYSQL_USER: db # Database user
