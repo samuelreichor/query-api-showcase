@@ -16,7 +16,7 @@ scope:
   - 'nestedentryfields.ffaf40d1-d46f-48eb-b181-b73770a9e058:read' # Cta
   - 'nestedentryfields.faf64569-2b86-4979-aefe-c5280424ac4c:read' # Matrix
   - 'nestedentryfields.9e43a42c-c6b3-4ef6-bb30-e1e9498604cd:read' # Matrix Max Relations
-  - 'nestedentryfields.fa87bf5d-fba6-4b27-b497-eededff9af1c:read' # Single Matrix 
+  - 'nestedentryfields.fa87bf5d-fba6-4b27-b497-eededff9af1c:read' # Single Matrix
   - 'volumes.e38a46b6-d1cd-4891-832a-f74ee486ec01:read' # Images
   - 'usergroups.everyone:read'
   - 'usergroups.9657a792-3a18-4480-9f37-d9cded00ae7a:read' # Editor

@@ -1,4 +1,4 @@
-dateModified: 1774382172
+dateModified: 1792600237
 email:
   fromEmail: samuelreichor@gmail.com
   fromName: Default
@@ -80,6 +80,7 @@ meta:
     c0ffe0d6-ee6f-45d7-9d5b-cc469270ff26: Richtext # Richtext
     c5bed593-74ed-420d-b526-ac96195a0e55: 'News Tag' # News Tag
     c6f999d6-4930-49f6-9bca-9426a6058f93: Link # Link
+    c90eba28-2bad-41f3-874d-24de4b23c11c: Default # Default
     cdf26765-b403-4449-8086-e526d5c50b2a: Address # Address
     d75e17fc-6378-4a30-9b59-14da2cd66fa0: 'News Filter' # News Filter
     d475f53e-db8d-495f-a239-5e05a0c9f09d: Json # Json
@@ -98,94 +99,13 @@ meta:
     f5f37312-bb9f-4c8e-9263-85733999fdd2: Square # Square
     f31ee956-cc97-4cdd-8eb3-3a33f861ecc0: 'New Schema' # New Schema
     f60e13fd-ed05-42c5-9387-c36ed7091dc1: Money # Money
-    fa87bf5d-fba6-4b27-b497-eededff9af1c: 'Single Matrix ' # Single Matrix 
+    fa87bf5d-fba6-4b27-b497-eededff9af1c: 'Single Matrix ' # Single Matrix
     faf64569-2b86-4979-aefe-c5280424ac4c: Matrix # Matrix
     fe85f36f-032f-4a6c-9ddc-7e084934d41a: 'Public Schema' # Public Schema
     ffaf40d1-d46f-48eb-b181-b73770a9e058: Cta # Cta
-plugins:
-  ckeditor:
-    edition: standard
-    enabled: true
-    schemaVersion: 5.0.0.1
-  cloner:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  hyper:
-    edition: standard
-    enabled: true
-    licenseKey: TU5WHF6YE117HD4L1PAEU6PA
-    schemaVersion: 1.0.0
-  imager-x:
-    edition: pro
-    enabled: true
-    licenseKey: I414X0BWX2GT7GGF069ILWDA
-    schemaVersion: 4.0.0
-  navigation:
-    edition: standard
-    enabled: true
-    licenseKey: DEJU07J1YJ2U60V3Q7ZNFS2L
-    schemaVersion: 2.1.2
-  query-api:
-    edition: standard
-    enabled: true
-    licenseKey: J3FO9VCUF25H7MMJFO0GMQFV
-    schemaVersion: 1.0.0
-  seomatic:
-    edition: standard
-    enabled: true
-    licenseKey: 3NW9FZ9R0GG0HMVXPE8F9OHZ
-    schemaVersion: 3.0.13
-    settings:
-      addHrefLang: true
-      addPaginatedHreflang: true
-      addXDefaultHrefLang: true
-      alwaysIncludeCanonicalUrls: false
-      cpTitlePrefix: '⚙ '
-      cspNonce: ''
-      cspScriptSrcPolicies:
-        -
-          __assoc__:
-            -
-              - policy
-              - "'self'"
-      devModeCpTitlePrefix: '🚧⚙ '
-      devModeTitlePrefix: '🚧 '
-      displayAnalysisSidebar: true
-      displayPreviewSidebar: true
-      enableDebugToolbarPanel: true
-      enableJsonLdEndpoint: true
-      enableMetaContainerEndpoint: true
-      enableSeoFileLinkEndpoint: true
-      environment: live
-      excludeNonCanonicalUrls: false
-      generatorEnabled: true
-      headersEnabled: true
-      includeHomepageInBreadcrumbs: true
-      lowercaseCanonicalUrl: true
-      manuallySetEnvironment: false
-      maxDescriptionLength: 155
-      maxTitleLength: 70
-      metaCacheDuration: 0
-      pluginName: SEOmatic
-      regenerateSitemapsAutomatically: true
-      renderEnabled: true
-      separatorChar: '|'
-      sidebarDisplayPreviewTypes:
-        - google
-        - twitter
-        - facebook
-      siteGroupsSeparate: true
-      siteUrlOverride: ''
-      sitemapsEnabled: true
-      socialMediaPreviewTarget: true
-      submitSitemaps: true
-      truncateDescriptionTags: true
-      truncateTitleTags: true
-      xDefaultSite: 0
 system:
   edition: pro
   live: true
   name: Default
-  schemaVersion: 5.9.0.8
+  schemaVersion: 5.11.0.2
   timeZone: America/Los_Angeles

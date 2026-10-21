@@ -5,19 +5,13 @@ entryTypes:
     uid: 2e6b55b2-5452-45a5-80ba-3aa1a0ba2a1d # Relations
 handle: relations
 maxAuthors: 1
+minAuthors: 1
 name: Relations
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   3b255b6a-c7cb-4664-9be2-96a291406be0: # ES

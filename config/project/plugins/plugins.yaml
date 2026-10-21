@@ -1,0 +1,75 @@
+ckeditor:
+  edition: standard
+  enabled: true
+  schemaVersion: 5.6.0.0
+cloner:
+  edition: standard
+  enabled: true
+  schemaVersion: 1.0.0
+imager-x:
+  edition: pro
+  enabled: true
+  licenseKey: I414X0BWX2GT7GGF069ILWDA
+  schemaVersion: 4.0.0
+navigation:
+  edition: standard
+  enabled: true
+  licenseKey: DEJU07J1YJ2U60V3Q7ZNFS2L
+  schemaVersion: 4.0.10
+query-api:
+  edition: standard
+  enabled: true
+  licenseKey: J3FO9VCUF25H7MMJFO0GMQFV
+  schemaVersion: 1.0.0
+seomatic:
+  edition: standard
+  enabled: true
+  licenseKey: 3NW9FZ9R0GG0HMVXPE8F9OHZ
+  schemaVersion: 3.0.13
+  settings:
+    addHrefLang: true
+    addPaginatedHreflang: true
+    addXDefaultHrefLang: true
+    alwaysIncludeCanonicalUrls: false
+    cpTitlePrefix: '⚙ '
+    cspNonce: ''
+    cspScriptSrcPolicies:
+      -
+        __assoc__:
+          -
+            - policy
+            - "'self'"
+    devModeCpTitlePrefix: '🚧⚙ '
+    devModeTitlePrefix: '🚧 '
+    displayAnalysisSidebar: true
+    displayPreviewSidebar: true
+    enableDebugToolbarPanel: true
+    enableJsonLdEndpoint: true
+    enableMetaContainerEndpoint: true
+    enableSeoFileLinkEndpoint: true
+    environment: live
+    excludeNonCanonicalUrls: false
+    generatorEnabled: true
+    headersEnabled: true
+    includeHomepageInBreadcrumbs: true
+    lowercaseCanonicalUrl: true
+    manuallySetEnvironment: false
+    maxDescriptionLength: 155
+    maxTitleLength: 70
+    metaCacheDuration: 0
+    pluginName: SEOmatic
+    regenerateSitemapsAutomatically: true
+    renderEnabled: true
+    separatorChar: '|'
+    sidebarDisplayPreviewTypes:
+      - google
+      - twitter
+      - facebook
+    siteGroupsSeparate: true
+    siteUrlOverride: ''
+    sitemapsEnabled: true
+    socialMediaPreviewTarget: true
+    submitSitemaps: true
+    truncateDescriptionTags: true
+    truncateTitleTags: true
+    xDefaultSite: 0

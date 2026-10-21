@@ -1,3 +1,4 @@
+defaultEnabledForPropagatedSites: true
 defaultPlacement: end
 fieldLayouts:
   ae54bcbc-5edb-4b88-8a07-74f5cd7dbcf9:
@@ -162,22 +163,23 @@ instructions: ''
 maxNodes: null
 name: 'Main Navigation'
 permissions:
-  craft\elements\Asset:
-    enabled: '1'
-    permissions: '*'
-  craft\elements\Category:
-    enabled: '1'
-    permissions: '*'
-  craft\elements\Entry:
-    enabled: '1'
-    permissions: '*'
   craft\elements\Tag:
-    enabled: ''
+    enabled: false
     permissions: '*'
-  verbb\navigation\nodetypes\CustomType:
-    enabled: '1'
-  verbb\navigation\nodetypes\PassiveType:
-    enabled: '1'
+  verbb\navigation\nodetypes\Asset:
+    enabled: true
+    permissions: '*'
+  verbb\navigation\nodetypes\Category:
+    enabled: true
+    permissions: '*'
+  verbb\navigation\nodetypes\Custom:
+    enabled: true
+  verbb\navigation\nodetypes\Entry:
+    enabled: true
+    excludeWithoutUri: false
+    permissions: '*'
+  verbb\navigation\nodetypes\Passive:
+    enabled: true
 propagationMethod: all
 siteSettings:
   f1b75f00-f4ed-4958-8a70-45714133b929: # EN
@@ -186,3 +188,4 @@ sortOrder: 1
 structure:
   maxLevels: null
   uid: 04b38ae9-9739-436c-8c5e-1103df27ba30
+titleTranslationMethod: site
