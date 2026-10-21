@@ -38,6 +38,9 @@ return [
     'production'  => [
         'devMode' => false,
         'disallowRobots' => false,
+        // The image ships the MariaDB client, which rejects MySQL's self-signed TLS certificate by default.
+        'backupCommand' => fn($command) => $command->addArg('--skip-ssl-verify-server-cert'),
+        'restoreCommand' => fn($command) => $command->addArg('--skip-ssl-verify-server-cert'),
     ],
 
     'staging'  => [
