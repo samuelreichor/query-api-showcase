@@ -1,41 +1,87 @@
-ARG php_version=8.2
+ARG php_version=8.4
 
-FROM craftcms/nginx:${php_version}
+### Stage 1a: CLI base — PHP CLI image with all required extensions.
+# Compiled once and reused by both the vendor and queue stages, so we only
+# pay the intl/imagick compile cost a single time per build instead of twice.
+# Stays in the Docker layer cache as long as the extension list is unchanged.
+FROM serversideup/php:${php_version}-cli-alpine AS cli-base
 
 USER root
 
-# Install Composer: Copy the Composer executable from the official Composer image.
+# bcmath required by craftcms/cms + moneyphp/money, gd required by phpoffice/phpspreadsheet,
+# intl required by craftcms/cms, imagick for Craft's image transforms + Imager X.
+RUN install-php-extensions bcmath gd intl imagick
+
+### Stage 1b: Composer Dependencies
+# Resolves PHP packages once and is reused by web + queue stages.
+FROM cli-base AS vendor
+
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Install system tools like git, unzip, bash, and vim using apk (Alpine Package Keeper).
-# --no-cache avoids caching package lists, reducing image size.
-RUN apk add --no-cache git unzip bash vim jq mariadb-connector-c mysql-client
+RUN apk add --no-cache git unzip jq
 
 WORKDIR /app
 
-# Copy the composer.json and composer.lock files to the working directory.
-COPY composer.json ./
+COPY composer.json composer.lock ./
 
-# Change version of craft-query-api in composer json to fix an issue with paths in the image.
-RUN jq ".require[\"samuelreichor/craft-query-api\"] = \"dev-dev\" | .repositories = (.repositories // [] | map(select(.type != \"path\" or .url != \"plugins/query-api\")))" composer.json > composer.tmp.json && mv composer.tmp.json composer.json
+# Locally craft-query-api comes from the plugins/query-api submodule (path repository),
+# which isn't available in the image. Swap it for the dev branch from Packagist.
+RUN jq ".require[\"samuelreichor/craft-query-api\"] = \"dev-dev\" | .repositories = (.repositories // [] | map(select(.type != \"path\" or .url != \"plugins/query-api\")))" composer.json > composer.tmp.json \
+  && mv composer.tmp.json composer.json
 
+# Only craft-query-api is re-resolved, everything else stays on the locked versions.
+# --no-scripts skips composer hooks that need a working DB connection or the
+# project sources. --no-autoloader because the PSR-4 modules/ aren't copied yet.
+RUN composer update samuelreichor/craft-query-api --no-interaction --no-dev --no-scripts --no-autoloader
 
-# Install PHP dependencies using Composer, with --no-interaction, --no-dev, and --optimize-autoloader flags.
-# --no-interaction: Prevents Composer from prompting for user input.
-# --no-dev: Skips installing development dependencies.
-# --optimize-autoloader: Improves autoloader performance.
-RUN composer install --no-interaction --no-dev --optimize-autoloader
+COPY modules ./modules
 
-# Copy the rest of the project files (backend code) into the container.
+RUN composer dump-autoload --no-dev --optimize
+
+### Stage 2: Web (nginx + php-fpm via s6-overlay)
+FROM serversideup/php:${php_version}-fpm-nginx-alpine AS web
+
+USER root
+
+# Point nginx at Craft's web root and enable opcache for production.
+ENV NGINX_WEBROOT=/app/web
+ENV PHP_OPCACHE_ENABLE=1
+
+# mariadb-connector + mysql-client are needed for craft db/backup + mysqldump.
+RUN install-php-extensions bcmath gd intl imagick \
+  && apk add --no-cache git unzip bash vim mariadb-connector-c mysql-client
+
+WORKDIR /app
+
 COPY . .
+COPY --from=vendor /app/composer.json /app/composer.lock ./
+COPY --from=vendor /app/vendor ./vendor
 
-# Set permissions for Craft CMS directories and .env file.
-# Create the storage, cpresources, and assets directories if they don't exist.
-# Change ownership of config, storage, cpresources, assets, and .env to www-data.
-# Set file permissions to 775 (read, write, execute for owner and group, read and execute for others).
+# Touch .env so the chown succeeds even when Coolify injects env vars at runtime
+# instead of providing a .env file in the build context.
 RUN mkdir -p /app/storage /app/web/cpresources /app/web/assets \
+  && touch /app/.env \
   && chown -R www-data:www-data /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env \
   && chmod -R 775 /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env
 
-# Switch back to the www-data user to run the Nginx web server.
 USER www-data
+
+### Stage 3: Queue Worker - runs craft queue/listen
+FROM cli-base AS queue
+
+RUN apk add --no-cache git unzip bash mariadb-connector-c mysql-client
+
+WORKDIR /app
+
+COPY . .
+COPY --from=vendor /app/composer.json /app/composer.lock ./
+COPY --from=vendor /app/vendor ./vendor
+
+RUN mkdir -p /app/storage /app/web/cpresources /app/web/assets \
+  && touch /app/.env \
+  && chown -R www-data:www-data /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env \
+  && chmod -R 775 /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env
+
+USER www-data
+
+CMD ["php", "craft", "queue/listen", "--verbose"]
