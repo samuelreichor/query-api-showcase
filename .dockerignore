@@ -5,9 +5,10 @@
 .env
 .env.*
 !.env.example
+node_modules
 vendor
-plugins
 storage/runtime
 storage/logs
 storage/backups
 web/cpresources
+web/dist

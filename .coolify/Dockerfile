@@ -1,87 +1,30 @@
-ARG php_version=8.4
+# For projects without a frontend build (e.g. headless/API-only or plain Twig
+# without Vite). Versions: only change them here.
+ARG PHP_VERSION=8.4
 
-### Stage 1a: CLI base — PHP CLI image with all required extensions.
-# Compiled once and reused by both the vendor and queue stages, so we only
-# pay the intl/imagick compile cost a single time per build instead of twice.
-# Stays in the Docker layer cache as long as the extension list is unchanged.
-FROM serversideup/php:${php_version}-cli-alpine AS cli-base
+### Craft (web + queue)
+FROM ghcr.io/samuelreichor/craftcms-docker:${PHP_VERSION}
 
+# Custom nginx directives, included inside the server block.
+COPY .coolify/nginx/ /etc/nginx/server-opts.d/
+
+# Code and dependencies belong to root, so PHP can't modify them.
 USER root
 
-# bcmath required by craftcms/cms + moneyphp/money, gd required by phpoffice/phpspreadsheet,
-# intl required by craftcms/cms, imagick for Craft's image transforms + Imager X.
-RUN install-php-extensions bcmath gd intl imagick
+# Project specific PHP extensions, e.g.:
+# RUN install-php-extensions redis
 
-### Stage 1b: Composer Dependencies
-# Resolves PHP packages once and is reused by web + queue stages.
-FROM cli-base AS vendor
-
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-RUN apk add --no-cache git unzip jq
-
-WORKDIR /app
-
+# Dependencies first, so they stay cached until composer.lock changes.
+# --no-scripts skips hooks that need a DB connection, --no-autoloader because
+# the project code (e.g. modules/) isn't copied yet.
 COPY composer.json composer.lock ./
-
-# Locally craft-query-api comes from the plugins/query-api submodule (path repository),
-# which isn't available in the image. Swap it for the dev branch from Packagist.
-RUN jq ".require[\"samuelreichor/craft-query-api\"] = \"dev-dev\" | .repositories = (.repositories // [] | map(select(.type != \"path\" or .url != \"plugins/query-api\")))" composer.json > composer.tmp.json \
-  && mv composer.tmp.json composer.json
-
-# Only craft-query-api is re-resolved, everything else stays on the locked versions.
-# --no-scripts skips composer hooks that need a working DB connection or the
-# project sources. --no-autoloader because the PSR-4 modules/ aren't copied yet.
-RUN composer update samuelreichor/craft-query-api --no-interaction --no-dev --no-scripts --no-autoloader
-
-COPY modules ./modules
-
-RUN composer dump-autoload --no-dev --optimize
-
-### Stage 2: Web (nginx + php-fpm via s6-overlay)
-FROM serversideup/php:${php_version}-fpm-nginx-alpine AS web
-
-USER root
-
-# Point nginx at Craft's web root and enable opcache for production.
-ENV NGINX_WEBROOT=/app/web
-ENV PHP_OPCACHE_ENABLE=1
-
-# mariadb-connector + mysql-client are needed for craft db/backup + mysqldump.
-RUN install-php-extensions bcmath gd intl imagick \
-  && apk add --no-cache git unzip bash vim mariadb-connector-c mysql-client
-
-WORKDIR /app
+RUN composer install --no-interaction --no-dev --no-scripts --no-autoloader
 
 COPY . .
-COPY --from=vendor /app/composer.json /app/composer.lock ./
-COPY --from=vendor /app/vendor ./vendor
 
-# Touch .env so the chown succeeds even when Coolify injects env vars at runtime
-# instead of providing a .env file in the build context.
-RUN mkdir -p /app/storage /app/web/cpresources /app/web/assets \
-  && touch /app/.env \
-  && chown -R www-data:www-data /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env \
-  && chmod -R 775 /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env
+# COPY resets folders that exist in the repo (e.g. storage/) to root, so hand
+# Craft's writable paths back to www-data.
+RUN composer dump-autoload --no-dev --optimize \
+  && chown -R www-data:www-data storage web/cpresources web/assets .env
 
 USER www-data
-
-### Stage 3: Queue Worker - runs craft queue/listen
-FROM cli-base AS queue
-
-RUN apk add --no-cache git unzip bash mariadb-connector-c mysql-client
-
-WORKDIR /app
-
-COPY . .
-COPY --from=vendor /app/composer.json /app/composer.lock ./
-COPY --from=vendor /app/vendor ./vendor
-
-RUN mkdir -p /app/storage /app/web/cpresources /app/web/assets \
-  && touch /app/.env \
-  && chown -R www-data:www-data /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env \
-  && chmod -R 775 /app/config /app/storage /app/web/cpresources /app/web/assets /app/.env
-
-USER www-data
-
-CMD ["php", "craft", "queue/listen", "--verbose"]
