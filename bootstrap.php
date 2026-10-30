@@ -16,3 +16,9 @@ if (class_exists(Dotenv\Dotenv::class)) {
     // with matching names. Use `createUnsafeImmutable` to disable this.
     Dotenv\Dotenv::createUnsafeMutable(CRAFT_BASE_PATH)->safeLoad();
 }
+
+// Craft only reads the license key from this constant or config/license.key,
+// the CRAFT_LICENSE_KEY env var alone isn't enough.
+if (!defined('CRAFT_LICENSE_KEY') && ($licenseKey = getenv('CRAFT_LICENSE_KEY'))) {
+    define('CRAFT_LICENSE_KEY', $licenseKey);
+}

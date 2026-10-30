@@ -15,16 +15,26 @@ USER root
 # RUN install-php-extensions redis
 
 # Dependencies first, so they stay cached until composer.lock changes.
+COPY composer.json composer.lock ./
+
+# Locally craft-query-api comes from the plugins/query-api submodule (path repository),
+# which isn't in the build context. Swap it for the dev branch from Packagist and
+# re-resolve only that package; everything else stays on the locked versions.
 # --no-scripts skips hooks that need a DB connection, --no-autoloader because
 # the project code (e.g. modules/) isn't copied yet.
-COPY composer.json composer.lock ./
-RUN composer install --no-interaction --no-dev --no-scripts --no-autoloader
+RUN apk add --no-cache jq \
+  && jq '.require["samuelreichor/craft-query-api"] = "dev-dev" | .repositories = (.repositories // [] | map(select(.type != "path" or .url != "plugins/query-api")))' composer.json > composer.tmp.json \
+  && mv composer.tmp.json composer.json \
+  && composer update samuelreichor/craft-query-api --no-interaction --no-dev --no-scripts --no-autoloader \
+  && cp composer.json composer.lock /tmp/
 
 COPY . .
 
-# COPY resets folders that exist in the repo (e.g. storage/) to root, so hand
-# Craft's writable paths back to www-data.
-RUN composer dump-autoload --no-dev --optimize \
+# COPY . . brings back the local composer.json/lock, restore the resolved ones.
+# COPY also resets folders that exist in the repo (e.g. storage/) to root, so
+# hand Craft's writable paths back to www-data.
+RUN cp /tmp/composer.json /tmp/composer.lock ./ \
+  && composer dump-autoload --no-dev --optimize \
   && chown -R www-data:www-data storage web/cpresources web/assets .env
 
 USER www-data
