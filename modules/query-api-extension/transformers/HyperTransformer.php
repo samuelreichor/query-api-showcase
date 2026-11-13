@@ -34,7 +34,7 @@ class HyperTransformer
     protected function getMetaData(): array
     {
         return [
-            'type' => $this->hyper->type,
+            'type' => $this->hyper->first()?->getType(),
         ];
     }
 }
