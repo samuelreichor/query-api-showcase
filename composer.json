@@ -2,19 +2,20 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
+    "php": "^8.4",
     "craftcms/ckeditor": "^5.9.0",
-    "craftcms/cms": "5.11.5.1",
-    "nystudio107/craft-seomatic": "5.1.22",
+    "craftcms/cms": "^5.12.2",
+    "nystudio107/craft-seomatic": "^5.1.24",
     "samuelreichor/craft-query-api": "*",
-    "spacecatninja/imager-x": "6.1.2",
-    "verbb/cloner": "3.0.5",
-    "verbb/hyper": "3.0.0",
-    "verbb/navigation": "4.0.11",
-    "vlucas/phpdotenv": "5.7.0"
+    "spacecatninja/imager-x": "^6.3.0",
+    "verbb/cloner": "^3.0.6",
+    "verbb/hyper": "^3.0.7",
+    "verbb/navigation": "^4.1.0",
+    "vlucas/phpdotenv": "^5.8.1"
   },
   "require-dev": {
-    "craftcms/generator": "^2.0.0",
-    "yiisoft/yii2-shell": "^2.0.3"
+    "craftcms/generator": "^2.2.0",
+    "yiisoft/yii2-shell": "^2.0.6"
   },
   "config": {
     "allow-plugins": {
@@ -22,10 +23,7 @@
       "yiisoft/yii2-composer": true
     },
     "sort-packages": true,
-    "optimize-autoloader": true,
-    "platform": {
-      "php": "8.4"
-    }
+    "optimize-autoloader": true
   },
   "scripts": {
     "post-root-package-install": [
